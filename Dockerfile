@@ -1,8 +1,7 @@
 FROM rocker/geospatial:3.5.1
 LABEL maintainer="Steve Lane"
-LABEL email="lane.s@unimelb.edu.au"
 
-## Install rust
+## Install libraries
 RUN apt-get update  \
   && apt-get install -y --no-install-recommends \
     apt-utils \
